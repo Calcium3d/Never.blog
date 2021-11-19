@@ -22,7 +22,7 @@ const fixRelativeLinks = (html, siteUrl) => {
   return $.html()
 }
 
-const siteTitle = `Xetera`
+const siteTitle = `Blue Chalk`
 const discordId = "140862798832861184"
 const themeColor = `#112130`
 

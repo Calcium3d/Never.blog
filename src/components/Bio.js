@@ -15,10 +15,6 @@ const Bio = React.memo(
   forwardRef((props, ref) => {
     const data = useStaticQuery(staticQuery)
     const { isSafari } = useIsSafari()
-
-    const osuRank = Intl.NumberFormat("default").format(
-      data.osu.statistics.globalRank
-    )
     const twitter = data.site.siteMetadata.social.twitter
     const image = (
       <Flex
@@ -39,25 +35,14 @@ const Bio = React.memo(
         <Stack lineHeight="1.7" spacing={4} ref={ref} {...props}>
           {image}
           <Heading fontWeight="black" fontSize="3xl" color="text.100">
-            Hi, I’m Xetera.
+            Hi, I’m the Blue Chalk.
           </Heading>
           <Stack spacing={4} fontSize="16px">
             <Text>
-              I'm currently a full-stack developer at{" "}
-              <Link
-                href="https://top.gg"
-                rel="external nofollower noopener"
-                color="brandSecondary"
-              >
-                Top.gg
-              </Link>
-              . I like to wear many hats when necessary and make cool ideas come
-              to life.
+              I like to wear hoodies when I can, although that time period is really slim living in India.
             </Text>
             <Text>
-              I’m a simp for functional programming and anti-abuse trust &
-              safety. I also enjoy design and writing on the side when I can
-              find the time.
+              I'm 15, in 10th grade, at the peak of Mt. Stupid, and possibly never crossing the valley of despair. I'm interested in cars, programming, blender, and random stuff. You'll find plenty of posts here...if I ever get around to writing them.
             </Text>
             <Text>
               As of{" "}
@@ -67,35 +52,26 @@ const Bio = React.memo(
               I have watched{" "}
               <ExternalLink
                 color="brandSecondary"
-                href="https://anilist.co/user/Xetera"
+                href="https://anilist.co/user/thebluechalk/"
               >
                 {data.anilist.user.statistics.anime.count} animes
-              </ExternalLink>{" "}
-              and I’m rank{" "}
-              <ExternalLink
-                color="brandSecondary"
-                href={`https://osu.ppy.sh/users/${data.osu.user_id}`}
-              >
-                #{osuRank} in osu.
+              </ExternalLink>
+            </Text>
+            <Text>
+              Btw, if you didnt know, you can visit my {" "}
+              <ExternalLink color="brandSecondary" href="https://oishikdas.in">
+                 portfolio
               </ExternalLink>
             </Text>
           </Stack>
           <Stack spacing={4} direction="row">
             <Link
-              href="https://github.com/xetera"
+              href="https://github.com/awsomemanNever"
               color="unset"
               _hover={{ color: "brand.100" }}
               aria-label="github link"
             >
               <RiGithubFill size={28} />
-            </Link>
-            <Link
-              href={`https://twitter.com/${twitter}`}
-              color="unset"
-              _hover={{ color: "brand.100" }}
-              aria-label="twitter link"
-            >
-              <RiTwitterFill size={28} />
             </Link>
           </Stack>
           {isSafari && (
@@ -148,7 +124,7 @@ const staticQuery = graphql`
   }
 
   query BioQuery {
-    avatar: file(absolutePath: { regex: "/avatars/xetera.png/" }) {
+    avatar: file(absolutePath: { regex: "/avatars/penguin.jpg/" }) {
       data: childImageSharp {
         gatsbyImageData(
           width: 200
@@ -174,12 +150,6 @@ const staticQuery = graphql`
             count
           }
         }
-      }
-    }
-    osu {
-      user_id
-      statistics {
-        globalRank: global_rank
       }
     }
   }

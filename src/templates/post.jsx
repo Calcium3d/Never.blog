@@ -20,7 +20,7 @@ import * as ChakraReact from "@chakra-ui/react"
 import { Image } from "@chakra-ui/image"
 import { Table, Td, Th, Tr } from "@chakra-ui/table"
 import { Text } from "@chakra-ui/react"
-import { colors, transition } from "../data/theme"
+import { transition } from "../data/theme"
 import { maxWidth } from "../shared"
 import { avatars } from "../components/Avatars"
 

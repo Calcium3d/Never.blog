@@ -27,65 +27,65 @@ const injectTheme = (obj, theme) => {
 const baseColors = {
   text: {
     100: {
-      dark: "#eee",
-      light: "#29292c",
+      dark: "#ECEFF4",
+      light: "#2E3440",
     },
     300: {
-      dark: "#9eaab7",
-      light: "#454547",
+      dark: "#E5E9F0",
+      light: "#3B4252",
     },
     500: {
-      dark: "#718096",
-      light: "#38404e",
+      dark: "#D8DEE9",
+      light: "#434C5E",
     },
   },
   bg: {
     100: {
-      light: "#f3f3f3",
-      dark: "#141621",
+      light: "#D8DEE9",
+      dark: "#2E3440",
     },
     300: {
-      light: "#e2e9ec",
-      dark: "#181b2b",
+      light: "#E5E9F0",
+      dark: "#3B4252",
     },
     500: {
-      light: "#E5E7EB",
-      dark: "#232735",
+      light: "#ECEFF4",
+      dark: "#434C5E",
     },
   },
   bgPrimary: {
-    light: "#f3f3f3",
-    dark: "#141621",
+    light: "#D8DEE9",
+    dark: "#2e3440",
   },
   bgSecondary: {
-    light: "#e2e9ec",
+    light: "#E5E9F0",
     dark: "#181b2b",
   },
   bgTertiary: {
-    light: "gray.200",
-    dark: "#232735",
+    light: "#ECEFF4",
+    dark: "#434C5E",
   },
   bgBrand: {
     light: "#f5e5ec",
-    dark: "hsl(333deg 52% 14%)",
+    dark: "#5E81AC",
   },
   borderSubtle: {
-    dark: "#1e2131",
+    dark: "#ffffff",
     light: "#e8e8e8",
   },
   borderSubtlePrimary: {
     light: "#dadbde",
-    dark: "#1f2231",
+    dark: "#ffffff",
   },
   brand: {
     100: {
-      light: "hsl(333deg, 100%, 45%)",
-      dark: "hsl(333deg, 100%, 45%)",
+      light: "#5E81AC",
+      dark: "#5E81AC",
     },
   },
   brandSecondary: {
-    dark: "#62daff",
-    light: "#256bc1",
+    dark: "#81a1c1",
+    light: "#81A1C1",
   },
 }
 

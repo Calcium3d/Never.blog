@@ -15,8 +15,8 @@ export const avatars = {
     return (
       <StaticImage
         {...common}
-        src="../../content/assets/avatars/xetera.png"
-        alt="Xetera"
+        src="../../content/assets/avatars/penguin.jpg"
+        alt="Blue Chalk"
       />
     )
   },

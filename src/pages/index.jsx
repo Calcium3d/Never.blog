@@ -1,9 +1,9 @@
 import React from "react"
 import { Link as GatsbyLink, graphql, PageProps } from "gatsby"
 import Bio from "../components/Bio"
-import PostData, { PostList, Tags } from "../components/PostShared"
+import { PostList } from "../components/PostShared"
 import { Layout, LayoutContent } from "../components/Layout"
-import { Flex, Grid, Heading, Stack, Box, Link, Text } from "@chakra-ui/layout"
+import { Flex, Grid, Stack, Box, Text } from "@chakra-ui/layout"
 import { Helmet } from "react-helmet"
 import SEO from "../components/Seo"
 import { RiGithubFill, RiRssFill } from "react-icons/ri"
@@ -50,7 +50,7 @@ const BlogIndex = ({ data, pageContext }) => {
                 color="text.300"
                 fontSize="xs"
                 mr={2}
-                href="https://github.com/xetera/xetera.dev"
+                href="https://github.com/awsomemanNever/Never.blog"
               >
                 View the site's code
               </ExternalLink>

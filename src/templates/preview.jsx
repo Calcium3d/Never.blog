@@ -129,7 +129,7 @@ export const query = graphql`
   }
 
   query PreviewPage($slug: String!) {
-    avatar: file(absolutePath: { regex: "/avatars/xetera.png/" }) {
+    avatar: file(absolutePath: { regex: "/avatars/penguin.jpg/" }) {
       image: childImageSharp {
         gatsbyImageData(width: 600, height: 600, layout: FIXED, quality: 100)
       }
@@ -150,7 +150,6 @@ export const query = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         thumbnail {
-          objectPosition
           src {
             image: childImageSharp {
               gatsbyImageData(quality: 100, height: 600, layout: CONSTRAINED)

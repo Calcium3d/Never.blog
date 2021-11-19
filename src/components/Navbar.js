@@ -72,29 +72,10 @@ export default function Navbar() {
               h={["30px", "32px", "45px"]}
               justifyContent="center"
             >
-              {lanyard.spotify ? (
-                <LazyImage
-                  key={lanyard.spotify.album_art_url}
-                  src={lanyard.spotify.album_art_url}
-                />
-              ) : lanyard.discord_user ? (
-                <Box position="relative" w="full">
-                  <LazyImage
-                    borderRadius="full"
-                    src={`https://cdn.discordapp.com/avatars/${lanyard.discordId}/${lanyard.discord_user.avatar}.webp?size=80`}
-                  />
-                  <Box
-                    position="absolute"
-                    borderWidth={["3px", "3px", null, "4px"]}
-                    borderColor="bg.100"
-                    right={-1}
-                    bottom={-1}
-                    borderRadius="full"
-                    bg={colors[lanyard?.discord_status ?? "offline"]}
-                    w={["13px", "15px", null, "20px"]}
-                    h={["13px", "15px", null, "20px"]}
-                  />
-                </Box>
+              {lanyard.discord_user ? (
+                <h1>
+                  Blue Chalk
+                </h1>
               ) : (
                 <SkeletonCircle w="full" h="full" />
               )}
