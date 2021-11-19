@@ -4,8 +4,6 @@ import { Box, Flex } from "@chakra-ui/layout"
 import {
   RiMoonLine,
   RiSunFoggyLine,
-  RiDiscordFill,
-  RiSpotifyFill,
 } from "react-icons/ri"
 import { HiMusicNote } from "react-icons/hi"
 import { transition } from "../data/theme"
@@ -82,60 +80,6 @@ export default function Navbar() {
             </Flex>
           </Flex>
         </Link>
-        {lanyard?.spotify && (
-          <Flex
-            justify="center"
-            h="full"
-            direction="column"
-            marginInlineStart={2}
-          >
-            {lanyard.spotify && (
-              <Flex align="center" color="text.100">
-                <RiSpotifyFill />
-                <Text fontSize="xs" mx={2}>
-                  {"I'm listening to"}
-                </Text>
-              </Flex>
-            )}
-            <Flex align="center" lineHeight={1}>
-              <Flex
-                display="flex"
-                fontSize="sm"
-                align="center"
-                color="text.300"
-              >
-                {lanyard?.spotify ? (
-                  <>
-                    <HiMusicNote />
-                    <ChakraLink
-                      color="inherit"
-                      rel="external noopener"
-                      target="_blank"
-                      href={`https://open.spotify.com/track/${lanyard.spotify.track_id}`}
-                    >
-                      <Text
-                        fontSize="xs"
-                        mx={2}
-                        maxWidth={["20ch", "40ch", "100%"]}
-                        whiteSpace="nowrap"
-                        textOverflow="ellipsis"
-                        overflow="hidden"
-                      >
-                        {lanyard.spotify.artist} - {lanyard.spotify.song}
-                      </Text>
-                    </ChakraLink>
-                  </>
-                ) : (
-                  <>
-                    {/* <Text fontSize="xs" mx={2}>
-                      I'm on Discord doing nothing
-                    </Text> */}
-                  </>
-                )}
-              </Flex>
-            </Flex>
-          </Flex>
-        )}
       </Flex>
       <Box
         p={2}

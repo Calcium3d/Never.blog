@@ -57,7 +57,6 @@
     "react-helmet": "^6.0.0",
     "react-icons": "^4.2.0",
     "react-rough-notation": "^1.0.1",
-    "react-spotify-web-playback-sdk": "^2.0.0",
     "react-use": "^17.2.4",
     "rehype-autolink-headings": "^5.1.0",
     "rehype-slug": "^4.0.1",
