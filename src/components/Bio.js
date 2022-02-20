@@ -42,7 +42,7 @@ const Bio = React.memo(
               I like to wear hoodies when I can, although that time period is really slim living in India.
             </Text>
             <Text>
-              I'm 15, in 10th grade, at the peak of Mt. Stupid, and possibly never crossing the valley of despair. I'm interested in cars, programming, blender, and random stuff. You'll find plenty of posts here...if I ever get around to writing them.
+              I'm 16, at the peak of Mt. Stupid, and possibly never crossing the valley of despair. I'm interested in cars, programming, blender, and random stuff. You'll find plenty of posts here...if I ever get around to writing them.
             </Text>
             <Text>
               As of{" "}
