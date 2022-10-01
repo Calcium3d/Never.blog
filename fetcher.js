@@ -27,3 +27,12 @@ export async function getAnilist() {
   const { data } = await response.json()
   return data
 }
+var factory = new ElementFactory(DomIndexProviders.Simple);
+
+// ToStream is an extension method to convert a string to UTF8 stream
+
+using (var stream = html.ToStream())
+{
+    var document = factory.Parse(stream, Encoding.UTF8);
+    CsqueryDocument_Simple = CQ.Create(document);
+}
